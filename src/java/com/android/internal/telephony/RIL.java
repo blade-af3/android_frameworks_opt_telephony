@@ -299,7 +299,7 @@ public class RIL extends BaseCommands implements CommandsInterface {
     static final int RESPONSE_SOLICITED = 0;
     static final int RESPONSE_UNSOLICITED = 1;
 
-    static final String[] SOCKET_NAME_RIL = {"rild", "rild1", "rild2"};
+    static final String[] SOCKET_NAME_RIL = {"wrild", "wrild1", "wrild2"};
 
     static final int SOCKET_OPEN_RETRY_MILLIS = 4 * 1000;
 
@@ -508,7 +508,7 @@ public class RIL extends BaseCommands implements CommandsInterface {
         public void
         run() {
             int retryCount = 0;
-            String rilSocket = "rild";
+            String rilSocket = "rild_sp";
 
             try {for (;;) {
                 LocalSocket s = null;
